@@ -12,7 +12,8 @@ def show():
             Estimate the market value of your diamond with precision
         </p>
     </div>
-
+    """, unsafe_allow_html=True)
+    st.markdown("""
     <div style="background-color: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
         <h3 style="color: #2c3e50;">About This App</h3>
         <p style="color: #495057;">
