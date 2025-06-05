@@ -5,9 +5,7 @@ def show():
     inject_css()
     st.markdown("""
     <div class="header-box">
-        <h1 style="color: #2c3e50; text-align: center; margin-bottom: 5px;">
-            Diamond Price Prediction
-        </h1>
+        <h1 style="color: #2c3e50; text-align: center; margin-bottom: 5px;">Diamond Price Prediction</h1>
         <p style="color: #6c757d; text-align: center; font-size: 16px;">
             Estimate the market value of your diamond with precision
         </p>
