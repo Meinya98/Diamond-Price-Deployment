@@ -4,7 +4,9 @@ from styles.custom_css import inject_css
 
 def show():
     inject_css()
-    html_temp="""
+    
+    # Header section
+    html_temp = """
     <div class="header-box">
         <h1 style="color: #2c3e50; text-align: center; margin-bottom: 5px;">Diamond Price Prediction</h1>
         <p style="color: #6c757d; text-align: center; font-size: 16px;">
@@ -12,7 +14,10 @@ def show():
         </p>
     </div>
     """
-    desc_temp="""
+    st.markdown(html_temp, unsafe_allow_html=True)
+    
+    # Description sections
+    desc_temp = """
     <div style="background-color: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
         <h3 style="color: #2c3e50;">About This App</h3>
         <p style="color: #495057;">
@@ -42,5 +47,4 @@ def show():
         </p>
     </div>
     """
-    stc.html(html_temp)
     st.markdown(desc_temp, unsafe_allow_html=True)
