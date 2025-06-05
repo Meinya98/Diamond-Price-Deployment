@@ -1,12 +1,14 @@
 import pickle
 
-file_path = 'config'
+# Load models and preprocessing objects
+with open('xgbr_model.pkl', 'rb') as file:
+    XGBR_Model = pickle.load(file)
+    
+with open('feature_columns.pkl', 'rb') as file:
+    feature_columns = pickle.load(file)
+    
+with open('scaler.pkl', 'rb') as file:
+    scaler = pickle.load(file)
 
-def load_pickle(file_path):
-    with open(file_path, 'rb') as file:
-        return pickle.load(file)
-
-XGBR_Model = load_pickle('xgbr_model.pkl')
-feature_columns = load_pickle('feature_columns.pkl')
-scaler = load_pickle('scaler.pkl')
-encoder = load_pickle('encoder.pkl')
+with open('encoder.pkl', 'rb') as file:
+    encoder = pickle.load(file)
