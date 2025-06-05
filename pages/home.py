@@ -22,6 +22,8 @@ def show():
             Our advanced machine learning model analyzes various diamond attributes to provide an accurate price prediction.
         </p>
     </div>
+    ''', unsafe_allow_html=True)
+    st.markdown('''
     <div style="background-color: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
         <h3 style="color: #2c3e50;">How To Use</h3>
         <ol style="color: #495057;">
@@ -31,6 +33,8 @@ def show():
             <li>View your estimated diamond value</li>
         </ol>
     </div>
+    ''', unsafe_allow_html=True)
+    st.markdown('''
     <div style="background-color: #f8f9fa; border-radius: 10px; padding: 20px;">
         <h3 style="color: #2c3e50;">Data Source</h3>
         <p style="color: #495057;">
